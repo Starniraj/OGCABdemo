@@ -1,0 +1,180 @@
+/* src/CSS/Services.css */
+.services {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Steligis", sans-serif; /* Use Steligis font or similar attractive font */
+  color: #4f76a1; /* Color matching header/footer */
+  font-weight: 700;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.card1 {
+  background-color: transparent;
+  background-image: linear-gradient(60deg, #5b2bb1 0%, #d978b5 100%);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 10px 10px 10px 10px;
+  /* Gradient background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Fixed width for uniformity */
+  text-align: center;
+  color: white; /* White text for better contrast */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card2 {
+  background-color: transparent;
+  background-image: linear-gradient(
+    135deg,
+    rgba(252, 185, 0, 1) 0%,
+    rgba(255, 105, 0, 1) 100%
+  );
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 10px 10px 10px 10px;
+  /* Gradient background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Fixed width for uniformity */
+  text-align: center;
+  color: white; /* White text for better contrast */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card3 {
+  background-color: transparent;
+  background-image: linear-gradient(
+    135deg,
+    rgba(6, 147, 227, 1) 0%,
+    rgb(155, 81, 224) 100%
+  );
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 10px 10px 10px 10px;
+  /* Gradient background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Fixed width for uniformity */
+  text-align: center;
+  color: white; /* White text for better contrast */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.card1 h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.card1 p {
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+}
+
+.card2 h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+}
+
+.card3 h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.card3 p {
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+}
+
+.book-now-btn {
+  background-color: #ffffff; /* Button color */
+  color: #4f76a1; /* Blue color text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #3e5b8e; /* Darker blue on hover */
+}
+
+.book-now-btn:active {
+  background-color: #33527a; /* Even darker on click */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%; /* Adjust card width on smaller screens */
+  }
+}

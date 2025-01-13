@@ -1,0 +1,52 @@
+.follow-us-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.follow-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5db075; /* Green color for branding */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.follow-title::before,
+.follow-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #ff77a9; /* Pink accent */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.follow-title::before {
+  left: -60px; /* Line to the left of text */
+}
+
+.follow-title::after {
+  right: -60px; /* Line to the right of text */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  box-shadow: 0 6px 15px rgba(93, 176, 117, 0.5); /* Green glow effect */
+}

@@ -1,0 +1,127 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 23%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #f76d3c;
+  font-size: 1.8rem;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #f76d3c;
+}
+
+/* Contact Us Section Styling */
+.contact-card {
+  background-color: #f76d3c;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  font-family: var(--font-headers, serif);
+  font-weight: 400;
+
+  letter-spacing: var(--font-headers-letters, 0.1em);
+
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
